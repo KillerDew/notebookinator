@@ -20,6 +20,6 @@
   "example": (icon: icons.web, color: purple, title: "Example"),
   "quote": (icon: icons.quotes, color: gray, title: "Quote"),
   "equation": (icon: icons.function, color: orange, title: "Equation"),
-  "decision": (icon: icons.target, color: blue, title: "Final Decision"),
-  "build": (icon: icons.hammer, color: red, title: "Build Complete"),
+  "decision": (icon: icons.target, color: blue, title: "Decision"),
+  "build": (icon: icons.hammer, color: red, title: "Build Process"),
 )
