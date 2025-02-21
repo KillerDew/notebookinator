@@ -22,5 +22,5 @@
   "equation": (icon: icons.function, color: orange, title: "Equation"),
   "decision": (icon: icons.target, color: blue, title: "Decision"),
   "build": (icon: icons.hammer, color: red, title: "Build Process"),
-  "code": (icon: icons.terminal, color: purple, title: "Code Snippet")
+  "code": (icon: icons.terminal, color: violet, title: "Code Snippet")
 )
