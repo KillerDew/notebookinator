@@ -11,6 +11,7 @@
 ///   #components.toc()
 /// ]
 /// ```
+#show link: set text(fill: black)
 #let toc() = utils.print-toc((frontmatter, body, appendix) => {
   heading(level: 1)[Entries]
 
@@ -20,9 +21,9 @@
       #h(5pt)
       #label(entry.type)
       #h(5pt)
-      #entry.title
+      #link(locate(entry.page-number), entry.title)
       #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
-      #entry.page-number
+      #entry.page-number.page()
     ],)
   })
 
@@ -33,7 +34,7 @@
   for entry in appendix [
     #entry.title
     #box(width: 1fr, line(length: 100%, stroke: (dash: "dotted")))
-    #entry.page-number
+    #entry.page-number.page()
 
   ]
 })

@@ -7,17 +7,18 @@
 // TODO: make an actual cover
 #let cover(ctx: (:)) = [
   #set align(center)
+  #context counter(page).step()
   *Radial Cover*
 ]
 
 #let frontmatter-entry(ctx: (:), body) = {
   show: page.with(
     header: components.title(ctx.title),
-    footer: align(right, context counter(page).display("i")),
+    footer: align(right, [#here().page()]),
   )
   body
 }
-
+#let add(x,y) = x+y
 #let body-entry(ctx: (:), body) = {
   let metadata = entry-type-metadata.at(ctx.type)
   show: page.with(header: components.title(
@@ -33,7 +34,7 @@
     #align(left, [
       *Designed by:* #ctx.author #h(2pt) \
       *Witnessed by:* #ctx.witness
-      #h(1fr) #context counter(page).display()
+      #h(1fr) #here().page()
     ])
   ])
   body

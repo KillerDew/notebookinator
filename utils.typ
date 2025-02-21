@@ -15,6 +15,7 @@
 /// ```
 /// - callback (function): A function which takes the #link(<ctx>)[ctx] of all entries as input, and returns the content of the entire table of contents.
 /// -> content
+#let add(x,y) = x + y
 #let print-toc(callback) = locate(
   loc => {
     // Each of the types of entries have their own state variable and label, so we need to decide which ones to use
@@ -35,7 +36,7 @@
       let result = ()
 
       for (index, entry) in state.final(loc).enumerate() {
-        let page-number = counter(page).at(markers.at(index).location()).at(0)
+        let page-number = markers.at(index).location()
         let ctx = entry.ctx
         ctx.page-number = page-number
         result.push(ctx)
