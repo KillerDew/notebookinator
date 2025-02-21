@@ -17,10 +17,10 @@
 #let admonition-type-metadata = (
   "note": (icon: icons.pencil, color: green, title: "Note"),
   "warning": (icon: icons.warning, color: red, title: "Warning"),
-  "example": (icon: icons.web, color: purple, title: "Example"),
+  "example": (icon: icons.web, color: cyan, title: "Example"),
   "quote": (icon: icons.quotes, color: gray, title: "Quote"),
   "equation": (icon: icons.function, color: orange, title: "Equation"),
   "decision": (icon: icons.target, color: blue, title: "Decision"),
   "build": (icon: icons.hammer, color: red, title: "Build Process"),
-  "code": (icon: icons.terminal, color: violet, title: "Code Snippet")
+  "code": (icon: icons.terminal, color: indigo, title: "Code Snippet")
 )
