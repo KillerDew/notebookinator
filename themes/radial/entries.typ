@@ -14,7 +14,7 @@
 #let frontmatter-entry(ctx: (:), body) = {
   show: page.with(
     header: components.title(ctx.title),
-    footer: align(right, [#here().page()]),
+    footer: align(right, context counter(page).display()),
   )
   body
 }
@@ -32,7 +32,8 @@
   ), footer: [
     #line(length: 100%)
     #align(left, [
-      *Designed by:* #ctx.author #h(2pt) \
+      *Designed by:* #ctx.author #h(1fr) 
+      #link((page:3, x:1pt, y:1pt))[Table of Contents] \
       *Witnessed by:* #ctx.witness
       #h(1fr) #context counter(page).display()
     ])
