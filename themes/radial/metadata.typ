@@ -24,5 +24,6 @@
   "decision": (icon: icons.target, color: blue, title: "Decision"),
   "build": (icon: icons.hammer, color: red, title: "Build Process"),
   "code": (icon: icons.terminal, color: indigo, title: "Code Explanation"),
-  "hardware": (icon: icons.info, color: teal, title: "Hardware Note")
+  "hardware": (icon: icons.info, color: lime, title: "Hardware Note"),
+  "reflect": (icon: icons.refresh, color: teal, title: "In Reflection"),
 )
