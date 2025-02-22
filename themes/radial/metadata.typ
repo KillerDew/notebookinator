@@ -12,6 +12,7 @@
   "test": (icon: icons.flask, color: green),
   "management": (icon: icons.bar-chart, color: surface-4),
   "notebook": (icon: icons.page, color: pink),
+  "reflect": (icon: icons.refresh, color: teal),
 )
 
 #let admonition-type-metadata = (

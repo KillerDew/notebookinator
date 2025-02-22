@@ -14,3 +14,5 @@
 #let web = read("./web.svg")
 #let quotes = read("./quotes.svg")
 #let function = read("./function.svg")
+
+#let refresh = read("./refresh.svg")
