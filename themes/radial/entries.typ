@@ -34,7 +34,7 @@
     #align(left, [
       *Designed by:* #ctx.author #h(2pt) \
       *Witnessed by:* #ctx.witness
-      #h(1fr) #here().page()
+      #h(1fr) #context counter(page).display()
     ])
   ])
   body

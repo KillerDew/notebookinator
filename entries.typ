@@ -32,7 +32,7 @@
     entries => {
       // Inject the proper labels and settings changes into the user's entry body
       let final-body = if entries.len() == 0 {
-        [#counter(page).update(1)] // Correctly set the page number for each section
+        [#counter(page).update(12)] // Correctly set the page number for each section
       } + [
         #metadata(none) #entry-label
         #counter(footnote).update(0)
