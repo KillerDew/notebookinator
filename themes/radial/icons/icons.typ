@@ -16,3 +16,5 @@
 #let function = read("./function.svg")
 
 #let refresh = read("./refresh.svg")
+
+#let info = read("./info.svg")
