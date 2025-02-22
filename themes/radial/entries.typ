@@ -14,7 +14,10 @@
 #let frontmatter-entry(ctx: (:), body) = {
   show: page.with(
     header: components.title(ctx.title),
-    footer: align(right, context counter(page).display()),
+    footer: align(left, [
+      #link((page: 3, x:0pt, y:0pt))[Table of Contents] #h(1fr)
+      #context counter(page).display()
+      ]),
   )
   body
 }
